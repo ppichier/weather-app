@@ -1,12 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, Image } from 'react-native';
 import About from './components/About'
 import Search from './components/Search';
 import { createMaterialTopTabNavigator, createAppContainer } from 'react-navigation'
 
 const Tabs = createMaterialTopTabNavigator({
-  Search: Search,
-  About: About
+  Search: {
+    screen: Search,
+    navigationOptions: {
+      tabBarIcon: () => {
+        return <Image source={require('./components/icons/home.png')} style={{ width: 30, height: 30 }} />
+      }
+    }
+  },
+  About: {
+    screen: About,
+    navigationOptions: {
+      tabBarIcon: () => {
+        return <Image source={require('./components/icons/user.png')} style={{ width: 30, height: 30 }} />
+      }
+    }
+  }
+
 }, {
     tabBarPosition: 'bottom',
     tabBarOptions: {

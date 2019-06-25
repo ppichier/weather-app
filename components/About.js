@@ -4,12 +4,6 @@ import style from '../Style'
 
 export default class About extends Component {
 
-    static navigationOptions = {
-        tabBarIcon : () => {
-            return <Image source={require('./icons/user.png')} style={{width: 30, height: 30}}/>
-        }
-    }
-
     search () {
         console.log(this.props.navigation.navigate('Search'))
     }

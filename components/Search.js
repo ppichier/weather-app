@@ -24,11 +24,7 @@ class Search extends Component {
     static navigationOptions = {
         title: 'Rechercher une ville',
         height: 1,
-        tabBarIcon: () => {
-            return <Image source={require('./icons/home.png')} style={{ width: 30, height: 30 }} />
-        }
     }
-
 
     render() {
         return (
@@ -44,18 +40,20 @@ class Search extends Component {
     }
 }
 
-const navigationOptions = {
-    headerStyle: style.header,
-    headerTitleStyle: style.headerTitle
-}
 
 export default createStackNavigator({
     Search: {
         screen: Search,
-        navigationOptions
+        navigationOptions: {
+            headerStyle: style.header,
+            headerTitleStyle: style.headerTitle
+        }
     },
     Result: {
         screen: List,
-        navigationOptions
+        navigationOptions: {
+            headerStyle: style.header,
+            headerTitleStyle: style.headerTitle
+        }
     }
 });

@@ -12,9 +12,6 @@ export default class List extends React.Component {
     static navigationOptions = ({ navigation }) => {
         return {
             title: `Météo / ${navigation.state.params.city}`,
-            tabBarIcon: () => {
-                return <Image source={require('./icons/home.png')} style={{ width: 30, height: 30 }} />
-            }
         }
     }
 
