@@ -81,10 +81,10 @@ const style = StyleSheet.create({
         alignItems: 'center'
     },
     firstView: {
-        backgroundColor: '#e54b65'
+        backgroundColor: globalStyle.color[1]
     },
     view: {
-        backgroundColor: '#baffff',
+        backgroundColor: globalStyle.color[2],
         borderWidth: 0,
         borderBottomWidth: 1,
         borderBottomColor: '#202340',

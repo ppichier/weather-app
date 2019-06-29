@@ -38,7 +38,7 @@ export default class List extends React.Component {
     render() {
         if (this.state.report === null) {
             return (
-                <ActivityIndicator color={style.color} size="large" />
+                <ActivityIndicator style={{paddingTop: 50}} color={style.color} size="large" />
             )
         } else {
             const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })

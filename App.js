@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, StatusBar, Image } from 'react-native';
 import About from './components/About'
 import Search from './components/Search';
 import { createMaterialTopTabNavigator, createAppContainer } from 'react-navigation'
+import style from './Style'
 
 const Tabs = createMaterialTopTabNavigator({
   Search: {
@@ -33,7 +34,7 @@ const Tabs = createMaterialTopTabNavigator({
         backgroundColor: '#FFaaaa'
       },
       style: {
-        backgroundColor: '#64ffda',
+        backgroundColor: style.color[0],
         borderTopWidth: 1,
         borderTopColor: '#14cba8',
       }

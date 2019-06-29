@@ -1,7 +1,9 @@
-const primary = '#64ffda'
 
+const primary = '#FF7777'
+const secondary = '#F9FA9B'
+const tertiary = '#CEECF0'
 export default ({
-    color: primary,
+    color: [primary, secondary, tertiary],
     container: {
         margin: 20
     },
