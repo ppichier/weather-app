@@ -11,7 +11,7 @@ export default class List extends React.Component {
 
     static navigationOptions = ({ navigation }) => {
         return {
-            title: `Météo / ${navigation.state.params.city}`,
+           title: `Météo / ${navigation.state.params.city}`,
         }
     }
 

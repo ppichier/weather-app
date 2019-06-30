@@ -32,6 +32,7 @@ class Search extends Component {
                 <TextInput
                     style={style.input}
                     onChangeText={(text) => this.setCity(text)}
+                    onSubmitEditing={ () => this.submit()}
                     value={this.state.city}
                 />
                 <Button color={style.color[0]} onPress={() => this.submit()} title="Rechercher une ville" />
